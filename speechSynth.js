@@ -20,6 +20,7 @@ inputForm.onsubmit = function(event) {
     sayTheWord(inputTxt.value);
 }
 play.addEventListener('click', () => {sayTheWord(inputTxt.value);});
+play2.addEventListener('click', () => {sayTheWord(textArray);});
 pause.addEventListener('click', () => {synth.pause();});
 resume.addEventListener('click', () => {synth.resume();});
 
@@ -60,3 +61,11 @@ pitch.onchange = function() {
 rate.onchange = function() {
     rateValue.textContent = rate.value;
     }
+
+    const textArray = 
+    [   
+        'Hallo',
+        ' Dit is een array',
+        ' .....',
+        ' Mooi he?'
+    ];
